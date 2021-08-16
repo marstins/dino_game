@@ -1,0 +1,70 @@
+body {
+    background: #fafafa;
+    text-align: center;
+    color: #666;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    box-sizing: border-box;
+    padding: 10% 20%;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 45px;
+}
+
+.hidden {
+    display: none;
+}
+
+.button {
+    font-weight: bolder;
+}
+
+.scoreboard {
+    margin-top: 40px;                                                                                     
+    padding: 0;
+    height: 30px;
+}
+
+.button:hover {
+    cursor: pointer;
+    color: rgb(46, 46, 46);
+}
+
+.background {
+    position: absolute;
+    width: 100vw;
+    height: 200px;
+    padding: 0;
+    left: 0;
+    background: url(img/background.png) repeat-x;
+    animation: slideright 800s infinite linear;
+}
+
+.dino {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    bottom: 0;
+    right: 500;
+    background: url('img/dino.png');  
+}
+
+.cactus {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    bottom: 0;
+    background: url('img/cactus.png');
+}
+
+@keyframes slideright {
+    from {
+        background-position: 70000%;
+    }
+
+    to {
+        background-position: 0;
+    }
+}
